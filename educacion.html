@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Felipe Montoya R. <femonres@gmail.com>">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>Hoja de Vida Digital</title>
+    </head>
+    <body>
+        <!-- Logo SVG y Titulo Datos Personales -->
+        <header>
+            <h1>
+                <svg width="96" height="96" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                    <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+                    <defs>
+                        <linearGradient id="svg_6">
+                            <stop stop-color="#cccccc" offset="0.07739"/>
+                            <stop stop-color="#333333" offset="0.93286"/>
+                        </linearGradient>
+                    </defs>
+                    <g>
+                        <title>Layer 1</title>
+                        <path stroke="#000000" fill="url(#svg_6)" d="m14.78619,77.6824l0,-67.6131l0,0c0,-2.87244 2.49769,-5.20101 5.57874,-5.20101l66.94483,0c3.08105,0 5.57873,2.32857 5.57873,5.20101c0,2.87243 -2.49768,5.201 -5.57873,5.201l-5.57874,0l0,67.6131c0,2.87244 -2.49768,5.20101 -5.57873,5.20101l-66.94483,0l0,0c-3.08106,0 -5.57874,-2.32857 -5.57874,-5.20101c0,-2.87244 2.49768,-5.201 5.57874,-5.201l5.57873,0zm11.15747,-72.81411l0,0c3.08105,0 5.57874,2.32857 5.57874,5.20101c0,2.87243 -2.49769,5.201 -5.57874,5.201c-1.54052,0 -2.78936,-1.16428 -2.78936,-2.6005c0.92979,-0.86683 1.85957,-1.73367 2.78936,-2.6005l5.57874,0m55.78736,5.201l-61.3661,0m-11.15747,62.4121l0,0c1.54053,0 2.78937,1.16429 2.78937,2.6005c0,1.43621 -1.24884,2.6005 -2.78937,2.6005l5.57874,0m-5.57874,5.20101l0,0c3.08105,0 5.57874,-2.32857 5.57874,-5.20101l0,-5.201" id="svg_2"/>
+                        <text fill="#ffffff" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="59.825364" y="68.749619" id="svg_5" font-size="24" font-family="Monospace" text-anchor="middle" xml:space="preserve" transform="matrix(1.3226660231268843,0,0,2.2642720898373203,-30.999805724876566,-88.8770148405374) " stroke="#000000" font-weight="bold">FMR</text>
+                    </g>
+                </svg>
+                <span>Hoja de vida: Felipe Montoya Restrepo</span>
+            </h1>
+        </header>
+        <!-- Menu de enlaces a las otras paginas -->
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="educacion.html">Educación</a>
+            <a href="experiencia.html">Experiencia</a>
+        </nav>
+        <section>
+            <article>
+                <h2>Educación</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Año</th>
+                            <th>Institución</th>
+                            <th>Lugar</th>
+                            <th>¿Culminó?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1999</td>
+                            <td>Inst. Rafael Navia</td>
+                            <td>Cali</td>
+                            <td>SI</td>
+                        </tr>
+                        <tr>
+                            <td>2004</td>
+                            <td>Inst. Bolibariano Esdiseños</td>
+                            <td>Cali</td>
+                            <td>SI</td>
+                        </tr>
+                        <tr>
+                            <td>2006</td>
+                            <td>ORT Uruguay</td>
+                            <td>Virtual</td>
+                            <td>SI</td>
+                        </tr>
+                        <tr>
+                            <td>2012</td>
+                            <td>Politecnico Grancolombiano</td>
+                            <td>Bogotá</td>
+                            <td>NO</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article>
+                <h3>Agregar estudios</h3>
+                <form method="get" enctype="multipart/form-data" action="educacion.html">
+                    <div>
+                        <label for="year">Año:</label>
+                        <select name="year">
+                            <option>2014</option>
+                            <option>2015</option>
+                            <option>2016</option>
+                            <option>2017</option>
+                            <option>2018</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="institute">Institución:</label>
+                        <input type="text" name="institute" placeholder="Instituto/Colegio/Universidad" required>
+                    </div>
+                    <div>
+                        <label for="place">Lugar:</label>
+                        <input type="text" name="place" placeholder="Lugar donde estudio" required>
+                    </div>
+                    <div>
+                        <label for="finish">¿Culminó?</label>
+                        <input type="radio" name="finish" id="finish_yes" value="SI">
+                        <label for="inlineRadio1">SI</label>
+                        <input type="radio" name="finish" id="finish_no" value="NO">
+                        <label for="inlineRadio1">NO</label>
+                    </div>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar</button>
+                </form>
+            </article>
+        </section>
+        <!-- Footer de la pagina -->
+        <footer>
+            <hr />
+            <ul>
+                <li><strong>Correo: </strong><a href="mailto:femonres@gmail.com?Subject=Hola%20desde%20HTML">femonres@gmail.com</a></li>
+                <li><strong>Celular: </strong>321-654-1254</li>
+            </ul>
+        </footer>
+    </body>
+</html>
